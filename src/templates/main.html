@@ -1,0 +1,92 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			th,
+			td {
+				padding: 10px;
+				border-bottom: 1px solid #ddd;
+				text-align: left;
+			}
+
+			th {
+				background-color: #4caf50;
+				color: white;
+			}
+
+			.container {
+				max-width: 600px;
+				margin: 20px auto;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #4caf50;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Submission recieved</h1>
+			<p>Hello {name},</p>
+
+			<p>
+				Thank you for your interest. We have recieved your submission and will
+				get back to you as soon as possible.
+			</p>
+
+			<p>Here is a copy of your submission for your records:</p>
+
+			<table>
+				<tr>
+					<th>Field</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>{name}</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>{email}</td>
+				</tr>
+				<tr>
+					<td>Message</td>
+					<td>{message}</td>
+				</tr>
+			</table>
+
+			<p>Best regards,<br />{fromName}<br />{from}</p>
+		</div>
+	</body>
+</html>
